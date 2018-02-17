@@ -1,10 +1,5 @@
 *.iml
-.gradle
-/local.properties
-.idea
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-/app/src/main/res/drawable/easter_egg.jpg
-/app/src/main/assets/
+local.properties
+.idea/
+.gradle/
+build/
