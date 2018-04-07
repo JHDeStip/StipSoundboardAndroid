@@ -32,6 +32,7 @@ public class SoundHelper implements ISoundHelper {
         sounds.add(new Sound("Annalisa leren", "annalisaLeren", 'o'));
         sounds.add(new Sound("Vlieger", "vlieger", 'p'));
         sounds.add(new Sound("Tis gedaan", "tisGedaan", 'q'));
+        sounds.add(new Sound("Geregeld", "geregeld", 'r'));
 
         return sounds;
     }

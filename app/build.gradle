@@ -7,8 +7,8 @@ android {
         applicationId "be.stip.soundboard"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 8
-        versionName "2.0.5.0"
+        versionCode 9
+        versionName "2.0.6.0"
         multiDexEnabled true
     }
     buildTypes {
@@ -23,11 +23,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:27.0.2'
-    implementation 'com.android.support:support-v4:27.0.2'
-    implementation 'com.google.dagger:dagger:2.14.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.google.dagger:dagger:2.15'
     implementation 'be.stannieman:commonservices:1.0.2.0'
     implementation 'be.stannieman:mvvm:1.0.4'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
-    annotationProcessor 'com.android.databinding:compiler:3.0.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+    annotationProcessor 'com.android.databinding:compiler:3.1.0'
 }
