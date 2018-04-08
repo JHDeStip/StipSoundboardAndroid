@@ -9,10 +9,16 @@ import be.stip.soundboard.models.Sound;
 
 public class SoundHelper implements ISoundHelper {
 
+    private static final List<Sound> SOUNDS = getSoundList();
+
     @Inject
     public SoundHelper() {}
 
     public List<Sound> getSounds() {
+        return SOUNDS;
+    }
+
+    private static List<Sound> getSoundList() {
         List<Sound> sounds = new LinkedList<Sound>();
 
         sounds.add(new Sound("Doe is normaal!", "doeIsNormaal", 'a'));
@@ -33,6 +39,8 @@ public class SoundHelper implements ISoundHelper {
         sounds.add(new Sound("Vlieger", "vlieger", 'p'));
         sounds.add(new Sound("Tis gedaan", "tisGedaan", 'q'));
         sounds.add(new Sound("Geregeld", "geregeld", 'r'));
+        sounds.add(new Sound("Alle hoere moete zwijge", "alleHoereMoeteZwijge", 's'));
+        sounds.add(new Sound("Jeroen pauw", "jeroenPauw", 't'));
 
         return sounds;
     }
