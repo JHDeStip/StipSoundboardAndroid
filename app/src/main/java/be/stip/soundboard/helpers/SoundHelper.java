@@ -41,6 +41,17 @@ public class SoundHelper implements ISoundHelper {
         sounds.add(new Sound("Geregeld", "geregeld", 'r'));
         sounds.add(new Sound("Alle hoere moete zwijge", "alleHoereMoeteZwijge", 's'));
         sounds.add(new Sound("Jeroen pauw", "jeroenPauw", 't'));
+        sounds.add(new Sound("Daar gaat ie weer", "daarGaatIeWeer", 'u'));
+        sounds.add(new Sound("Hatsikideej", "hatsikideej", 'v'));
+        sounds.add(new Sound("Grootgebracht met melk", "grootgebrachtMetMelk", 'w'));
+        sounds.add(new Sound("Belachelijk", "belachelijk", 'x'));
+        sounds.add(new Sound("Deux bouteilles de vino", "deuxBouteillesDeVino", 'y'));
+        sounds.add(new Sound("Goesting om te kappen", "goestingOmTeKappen", 'z'));
+        sounds.add(new Sound("Hoerenzoonnn", "hoerenzoonnn", '0'));
+        sounds.add(new Sound("Ik haat sossen", "ikHaatSossen", '1'));
+        sounds.add(new Sound("Kakken en zwijgen", "kakkenEnZwijgen", '2'));
+        sounds.add(new Sound("Leuvense janetten", "leuvenseJanetten", '3'));
+        sounds.add(new Sound("BMI van 30", "bmiVan30", '4'));
 
         return sounds;
     }
