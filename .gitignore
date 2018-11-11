@@ -5,3 +5,4 @@ local.properties
 build/
 app/src/main/assets/
 app/src/main/res/drawable/easter_egg.jpg
+*.aab
