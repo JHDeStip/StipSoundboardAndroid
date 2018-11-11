@@ -1,11 +1,11 @@
 package be.stip.soundboard.views;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
-import android.databinding.Observable;
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.Observable;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.AbsoluteLayout;
@@ -32,7 +32,7 @@ public class ButtonsView extends ViewBase<ButtonsViewModel> {
     }
 
     @Override
-    protected void onCreate(@Nullable  Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         ((ButtonsViewBinding) DataBindingUtil.setContentView(this, R.layout.buttons_view)).setViewModel(getViewModel());
@@ -83,6 +83,7 @@ public class ButtonsView extends ViewBase<ButtonsViewModel> {
         button.setHeight(height);
         button.setMaxHeight(height);
         button.setTransformationMethod(null);
+        button.setTextSize(20);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

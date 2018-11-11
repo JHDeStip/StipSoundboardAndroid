@@ -1,6 +1,6 @@
 package be.stip.soundboard.viewmodels;
 
-import android.databinding.Bindable;
+import androidx.databinding.Bindable;
 
 import java.util.List;
 

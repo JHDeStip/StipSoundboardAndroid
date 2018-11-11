@@ -1,9 +1,9 @@
 package be.stip.soundboard.views;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.WindowManager;
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
 
 import be.stip.soundboard.App;
 import be.stip.soundboard.R;
