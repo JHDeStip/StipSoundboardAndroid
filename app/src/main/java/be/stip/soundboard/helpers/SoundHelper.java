@@ -52,6 +52,7 @@ public class SoundHelper implements ISoundHelper {
         sounds.add(new Sound("Kakken en zwijgen", "kakkenEnZwijgen", '2'));
         sounds.add(new Sound("Leuvense janetten", "leuvenseJanetten", '3'));
         sounds.add(new Sound("BMI van 30", "bmiVan30", '4'));
+        sounds.add(new Sound("Alle venten zijn homo", "alleVentenZijnHomo", '5'));
 
         return sounds;
     }
