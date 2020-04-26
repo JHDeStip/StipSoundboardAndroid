@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "be.stip.soundboard"
         minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 14
-        versionName "2.2.0.0"
+        targetSdkVersion 29
+        versionCode 16
+        versionName "2.3.0.0"
         multiDexEnabled true
     }
     buildTypes {
@@ -23,10 +23,10 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.google.dagger:dagger:2.19'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.dagger:dagger:2.27'
     implementation 'be.stannieman:commonservices:1.0.2.0'
     implementation 'be.stannieman:mvvm:1.0.4'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.27'
     annotationProcessor 'com.android.databinding:compiler:3.1.4'
 }

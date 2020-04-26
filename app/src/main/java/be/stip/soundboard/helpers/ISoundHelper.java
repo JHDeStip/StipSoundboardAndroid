@@ -1,9 +1,9 @@
 package be.stip.soundboard.helpers;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import be.stip.soundboard.models.Sound;
 
 public interface ISoundHelper {
-    List<Sound> getSounds();
+    ArrayList<Sound> getSounds();
 }

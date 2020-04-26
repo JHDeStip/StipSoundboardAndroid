@@ -2,14 +2,15 @@ package be.stip.soundboard.views;
 
 import android.content.Context;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.Observable;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.AbsoluteLayout;
 import android.widget.Button;
+import android.widget.FrameLayout;
 
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class ButtonsView extends ViewBase<ButtonsViewModel> {
 
         ((ButtonsViewBinding) DataBindingUtil.setContentView(this, R.layout.buttons_view)).setViewModel(getViewModel());
 
-        final AbsoluteLayout buttonsGrid = (AbsoluteLayout)findViewById(R.id.buttonsGrid);
+        final FrameLayout buttonsGrid = (FrameLayout)findViewById(R.id.buttonsGrid);
 
         getViewModel().addOnPropertyChangedCallback(new Observable.OnPropertyChangedCallback() {
             @Override
@@ -51,7 +52,7 @@ public class ButtonsView extends ViewBase<ButtonsViewModel> {
         });
     }
 
-    private void createButtons(AbsoluteLayout buttonsGrid, List<Sound> sounds) {
+    private void createButtons(FrameLayout buttonsGrid, List<Sound> sounds) {
         buttonsGrid.removeAllViews();
 
         int size = getWindowWidth() / 2;
@@ -66,7 +67,9 @@ public class ButtonsView extends ViewBase<ButtonsViewModel> {
                 width = size;
             }
 
-            AbsoluteLayout.LayoutParams params = new AbsoluteLayout.LayoutParams(width, size, (i%2)*size, (i/2)*size);
+            FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(width, size);
+            params.leftMargin = (i%2)*size;
+            params.topMargin = (i/2)*size;
 
             buttonsGrid.addView(createButton(sounds.get(i), width, size), params);
         }
@@ -77,7 +80,7 @@ public class ButtonsView extends ViewBase<ButtonsViewModel> {
         button.setText(sound.getName());
         button.setSoundEffectsEnabled(false);
         button.setTextColor(Color.rgb(237, 28, 36));
-        button.setBackground(context.getResources().getDrawable(R.drawable.button_border_shape));
+        button.setBackground(ContextCompat.getDrawable(context, R.drawable.button_border_shape));
         button.setWidth(width);
         button.setMaxWidth(width);
         button.setHeight(height);
