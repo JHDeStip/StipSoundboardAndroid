@@ -57,6 +57,9 @@ public class SoundHelper implements ISoundHelper {
         sounds.add(new Sound("Gene vechter", "geneVechter"));
         sounds.add(new Sound("Dikke janet", "dikkeJanet"));
         sounds.add(new Sound("Michiel Reyners janet", "michielReynersJanet"));
+        sounds.add(new Sound("J'ai dronki ponki", "jAiDronkiPonki"));
+        sounds.add(new Sound("Emma zatte lach", "emmaZatteLach"));
+        sounds.add(new Sound("Lowe muih", "loweMuih"));
 
         return sounds;
     }
